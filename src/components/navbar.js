@@ -25,9 +25,8 @@ const MenuList = styled.ul`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     position: absolute;
-    top: -25px;
+    top: 42px;
     background-color: rgba(191,96,113,1);
     li{
         list-style: none;
@@ -57,7 +56,6 @@ export default function NavBar (){
     const [dropdown, setDropdown] = useState(false)
     return(
         <Menu>
-            
             <MenuDropDown>
                 <button onClick={()=>{ setDropdown(!dropdown) }}>Menu</button>
                 {dropdown && menuList()}
